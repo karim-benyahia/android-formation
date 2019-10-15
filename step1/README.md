@@ -1,0 +1,31 @@
+# Création d'une application Android
+Le but de cet exercice est de lister un ensemble de données, récupèré depuis un service exposé gratuitement, vous pourrez choisir votre service à cette adresse : [https://github.com/public-apis/public-apis](https://github.com/public-apis/public-apis).
+
+Pour ce faire, nous allons créer une activité, et l'enrichir dynamiquement des données reçu du service choisi.
+
+## Création du projet
+Créez un nouveau projet.
+Vous choisirez une activité vide (Empty Activity).
+Vous nommerez ce projet comme vous le souhaitez, et choisirez le langage Java.
+
+## Ma première "Activity"
+
+Définition d'une activité [ici](https://developer.android.com/reference/android/app/Activity)
+
+Deux fichiers utils à l'Activity ont été créés.
+1. MainActivity.java dans les sources Java
+
+> Celui ci reprèsente le Controler. C'est dans ce module que vous implémenterez les règles de cycle de vie de votre composant.   
+1. activity_main.xml dans le dossier layout
+>Ce fichier correspond à la View. c'est un fichier xml dans lequel vous renseignerez les éléments gaphiques qui composeront votre page/écran/composant. 
+
+
+Commençons par éditer ce fichier, vous trouverez [ici](https://developer.android.com/reference/android/widget/package-summary?hl=fr), une liste exhaustif des widgets existants qui vous permettrons de créer votre première interface.
+
+Amusez vous avec différents composants afin de découvrir ce qu'Android vos offre nativement.
+
+### Appel de l'API choisi
+
+Pour ce faire nous utiliserons une librairie nommée [volley](https://developer.android.com/training/volley),
+je vous invite à lire la doc afin de faire votre première requête.
+Vous pourrez ensuite utilisé les données reçu afin de les visualizer sur votre application Android.
