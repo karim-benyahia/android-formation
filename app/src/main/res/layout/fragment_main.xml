@@ -1,0 +1,36 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_detail_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dedede"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_main_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:scrollbars="vertical" />
+
+    <!-- DECLARING FLOATING ACTION BUTTON -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_main_prev_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:elevation="10dp"
+        app:fabCustomSize="70dp"
+        android:src="@drawable/ic_action_scroll_to_top"
+        app:layout_anchor="@id/fragment_main_recycler_view"
+        app:layout_anchorGravity="bottom|right|end" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>
