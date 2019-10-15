@@ -24,8 +24,36 @@ Commençons par éditer ce fichier, vous trouverez [ici](https://developer.andro
 
 Amusez vous avec différents composants afin de découvrir ce qu'Android vos offre nativement.
 
+
+Retourner ensuite dans le fichier MainActivity.java
+
+```java
+
+    private TextView mTextView;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ...
+        
+        this.mTextView = findViewById(R.id.mon_text_view);
+        this.mTextView.setText("le texte que je veux afficher")
+        
+        ...
+    }
+```
+
 ### Appel de l'API choisi
 
 Pour ce faire nous utiliserons une librairie nommée [volley](https://developer.android.com/training/volley),
 je vous invite à lire la doc afin de faire votre première requête.
 Vous pourrez ensuite utilisé les données reçu afin de les visualizer sur votre application Android.
+
+
+### le RecyclerView
+
+Vous avez récupérer une liste de données il vous faudrait donc les afficher sous forme de liste.
+Ce composant vous le permet.
+Je vous invite donc à faire une recherche afin de maitriser au mieux ce composant et afficher vos informations sous forme de liste scrollable.
+
+Indice : regardez aussi du coté des CardView
